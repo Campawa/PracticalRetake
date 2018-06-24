@@ -14,7 +14,11 @@ import java.util.List;
 public class CardAdapter extends RecyclerView.Adapter<CardViewHolder> {
 
     private List<CardModel> list;
-    public CardAdapter(List<CardModel> cards) {list = cards;}
+    public CardAdapter(List<CardModel> list) {this.list = list;}
+
+    public void drawingCards(List<CardModel> cardModelList){
+        cardModelList.addAll(cardModelList);
+    }
 
     @Override
     public CardViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -24,7 +28,8 @@ public class CardAdapter extends RecyclerView.Adapter<CardViewHolder> {
 
     @Override
     public void onBindViewHolder( CardViewHolder holder, int position) {
-        holder.bind(list.get(position));
+        CardModel cardModel = list.get(position);
+        holder.bind(cardModel);
     }
 
     @Override

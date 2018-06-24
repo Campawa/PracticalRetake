@@ -9,11 +9,11 @@ import java.util.List;
 public class CardResponse {
     private boolean success;
     private boolean shuffled;
-    private List<String> cards;
+    private List<CardModel> cards;
     private String deck_id;
     private int remaining;
 
-    public CardResponse(boolean success, boolean shuffled, List<String> cards, String deck_id, int remaining) {
+    public CardResponse(boolean success, boolean shuffled, List<CardModel> cards, String deck_id, int remaining) {
         this.success = success;
         this.shuffled = shuffled;
         this.cards = cards;
@@ -37,11 +37,11 @@ public class CardResponse {
         this.shuffled = shuffled;
     }
 
-    public List<String> getCards() {
+    public List<CardModel> getCards() {
         return cards;
     }
 
-    public void setCards(List<String> cards) {
+    public void setCards(List<CardModel> cards) {
         this.cards = cards;
     }
 

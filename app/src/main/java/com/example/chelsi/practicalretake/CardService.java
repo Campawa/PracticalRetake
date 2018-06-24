@@ -17,5 +17,5 @@ public interface CardService {
     Call<CardResponse> getCardResponse();
 
     @GET("{deck_id}/draw/?count")
-    Call<CardResponse> getNewCards(@Path("deck_id") String newCards);
+    Call<CardResponse> getNewCards(@Path("deck_id") String newCards, @Query("count") int num_cards);
 }

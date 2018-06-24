@@ -3,8 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingRight="10dp"
-    android:paddingLeft="10dp"
+    android:paddingRight="@dimen/mypadding"
+    android:paddingLeft="@dimen/padding"
     android:background="#228B22">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="30dp"
-        android:text="Cards remaining: "
+        android:text="@string/cards_remaining"
         android:textSize="20sp"
         android:layout_marginRight="50dp"/>
 
@@ -23,13 +23,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="190dp"
-        android:text="Shuffle New Deck"
+        android:text="@string/shuffle_new_deck"
         android:textSize="16sp"
         />
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="@dimen/viewheight"
         android:layout_marginTop="80dp"
         android:background="@android:color/black"/>
 
@@ -41,7 +41,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="95dp"
-        android:hint="How many cards?"
+        android:hint="@string/how_many_cards"
         android:textSize="15sp"
         android:inputType="number"/>
 
@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="220dp"
         android:layout_alignTop="@+id/editText"
-        android:text="Draw Cards"
+        android:text="@string/draw_cards"
         android:textSize="16sp" />
 
 
